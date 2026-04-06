@@ -1,14 +1,13 @@
 """
-Prompts for ip-sentinel three-phase OSINT + pentest analysis.
 Phase 4 (autonomous agent) will execute Phase 3 output directly —
 every command block must use $TARGET / $LHOST / $LPORT variables.
 """
 import json
 
 # ─────────────────────────────────────────────────────────────
-# SYSTEM PROMPT  (~200 tokens)
+# SYSTEM PROMPT
 # ─────────────────────────────────────────────────────────────
-SYSTEM_PROMPT = """You are SENTINEL — a senior offensive security engineer operating within authorized engagements.
+SYSTEM_PROMPT = """You are a senior offensive security engineer operating within authorized engagements.
 
 Expertise: network recon, CVE research, exploitation (Metasploit/manual), post-exploitation, MITRE ATT&CK, OSCP/OSEP methodology.
 
@@ -182,7 +181,7 @@ Analyze every open port. For each service:
 3.
 
 ---
-*Sources: Shodan, Censys | Confidence: HIGH (version confirmed) / MEDIUM (service confirmed) / LOW (port only)*
+*Sources: Shodan | Confidence: HIGH (version confirmed) / MEDIUM (service confirmed) / LOW (port only)*
 """
 
 
@@ -371,5 +370,5 @@ echo "[*] Cleanup complete: $(date)"
 - Out-of-scope / not tested:
 
 ---
-*Phase 3 — ip-sentinel | Authorized engagements only*
+*Phase 3 - Shodan Xploiter v1.0 | Authorized engagements only*
 """
