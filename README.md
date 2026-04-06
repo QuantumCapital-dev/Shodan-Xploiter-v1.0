@@ -59,7 +59,7 @@ Contributions, improvements, and issue reports are welcome.
 
 ## 🖥️ Screenshots
 
-<img width="516" height="457" alt="Screenshot from 2026-04-06 18-33-27" src="https://github.com/user-attachments/assets/d9ccf877-cc63-43c1-8db9-6f989f16a280" />
+<img width="445" height="403" alt="Screenshot from 2026-04-06 18-43-19" src="https://github.com/user-attachments/assets/a7cebe45-65a1-42a5-9930-be81f412a8e4" />
 
 ***
 
