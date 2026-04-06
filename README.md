@@ -59,13 +59,7 @@ Contributions, improvements, and issue reports are welcome.
 
 ## 🖥️ Screenshots
 
-> Place your terminal screenshots in a `screenshots/` folder and they will render here automatically.
-
-
-
-
-
-
+<img width="516" height="457" alt="Screenshot from 2026-04-06 18-33-27" src="https://github.com/user-attachments/assets/d9ccf877-cc63-43c1-8db9-6f989f16a280" />
 
 ***
 
