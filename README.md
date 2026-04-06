@@ -12,6 +12,9 @@
 > ⚠️ **FOR AUTHORIZED ENGAGEMENTS ONLY** — Unauthorized use is illegal and unethical.
 
 </div>
+***
+
+<img src="https://github.com/user-attachments/assets/e0aa029f-4e8f-41b6-9e0e-51dd75d8b36b" />
 
 
 ***
