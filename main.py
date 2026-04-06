@@ -57,7 +57,7 @@ LOGO_LINES = [
     r"/  ___| | | |/ _ \|  _ \  / \  | \ | |",
     r"\ `--.| |_| | | | | | | |/ _ \ |  \| |",
     r" `--. \  _  | |_| | |_| / ___ \| |\  |",
-    r"\____/_| |_|\___/|____/_/   \_\_| \_|",
+    r"\_____/_| |_|\___/|____/_/   \_\_| \_|",
 ]
 
 XPLOITER_LINES = [
@@ -519,19 +519,17 @@ def run_ai_phase(
     return response
 
 
-# -----------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Three-phase analysis
 #
 # Phase 1 -- Identity & Attribution    max_tokens: 2500   model: HAIKU_MODEL
-# Phase 2 -- Attack Surface & Vulns    max_tokens: 8096   model: SONNET_MODEL
+# Phase 2 -- Attack Surface & Vulns    max_tokens: 12000   model: SONNET_MODEL
 # Phase 3 -- Penetration Testing Guide max_tokens: 16000  model: SONNET_MODEL
 #
 #           (not found in Shodan index), pipeline stops here and returns
 #           placeholder strings for phase2 and phase3 -- no point analysing
 #           an attack surface that does not exist in the dataset.
-#
-# [UNCHANGED] Phase 3 logic, has_surface check, rate-limit pauses -- all intact.
-# -----------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 def run_analysis(ip: str, raw: dict, no_ai: bool) -> Tuple[str, str, str]:
     if no_ai:
@@ -591,7 +589,7 @@ def run_analysis(ip: str, raw: dict, no_ai: bool) -> Tuple[str, str, str]:
         provider,
         prompts.SYSTEM_PROMPT,
         p2_prompt,
-        max_tokens=16000,
+        max_tokens=12000,
         model=SONNET_MODEL,     # full reasoning for vulnerability analysis
     )
     section("VULNERABILITY REPORT", "\U0001f534")
@@ -636,7 +634,6 @@ def run_analysis(ip: str, raw: dict, no_ai: bool) -> Tuple[str, str, str]:
 
 # -----------------------------------------------------------------------------
 # Entry point
-#
 # -----------------------------------------------------------------------------
 
 def main():
