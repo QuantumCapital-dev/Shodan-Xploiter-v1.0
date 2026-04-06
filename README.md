@@ -107,7 +107,7 @@ shodan-xploiter/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/shodan-xploiter.git
+https://github.com/QuantumCapital-dev/Shodan-Xploiter-v1.0.git
 cd shodan-xploiter
 ```
 
