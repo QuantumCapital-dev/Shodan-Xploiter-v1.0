@@ -539,7 +539,7 @@ def run_analysis(ip: str, raw: dict, no_ai: bool) -> Tuple[str, str, str]:
         return ("(AI skipped)", "(AI skipped)", "(AI skipped)")
 
     provider = get_provider()
-    delay    = config.AI_PHASE_DELAY.get("claude", 3)
+    delay = config.AI_PHASE_DELAY
 
     # ── PHASE 1 -- Identity & Attribution ────────────────────────────────────
     section("AI PHASE 1 -- Identity & Attribution", "\U0001f916")
