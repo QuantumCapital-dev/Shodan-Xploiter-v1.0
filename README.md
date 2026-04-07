@@ -12,7 +12,6 @@
 > ⚠️ **FOR AUTHORIZED ENGAGEMENTS ONLY** — Unauthorized use is illegal and unethical.
 
 </div>
-***
 
 <img src="https://github.com/user-attachments/assets/e0aa029f-4e8f-41b6-9e0e-51dd75d8b36b" />
 
@@ -88,7 +87,7 @@ shodan-xploiter/
 ├── main.py                   # Entry point — CLI, logo, orchestration
 ├── config.py                 # ENV loader — API keys, models, output dir
 ├── requirements.txt          # Python dependencies
-├── .env                      # Your API keys (not committed)
+├── .env                      # Your API keys
 │
 ├── collectors/
 │   ├── whois_collector.py    # WHOIS / RDAP via ipwhois
@@ -142,6 +141,9 @@ Edit `.env` with your credentials:
 ```dotenv
 # Required
 ANTHROPIC_API_KEY=sk-ant-your-key-here
+
+# Delay in seconds between Phase 2 and Phase 3 (default: 2)
+CLAUDE_PHASE_DELAY=0
 
 # Optional — fallback passive scraper is used automatically if not set
 SHODAN_API_KEY=your-shodan-api-key
